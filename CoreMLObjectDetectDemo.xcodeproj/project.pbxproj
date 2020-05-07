@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		6722D42824648F9400D83A19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722D42724648F9400D83A19 /* AppDelegate.swift */; };
-		6722D42A24648F9400D83A19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722D42924648F9400D83A19 /* SceneDelegate.swift */; };
 		6722D42C24648F9400D83A19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6722D42B24648F9400D83A19 /* ViewController.swift */; };
 		6722D42F24648F9400D83A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6722D42D24648F9400D83A19 /* Main.storyboard */; };
 		6722D43124648F9800D83A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6722D43024648F9800D83A19 /* Assets.xcassets */; };
 		6722D43424648F9800D83A19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6722D43224648F9800D83A19 /* LaunchScreen.storyboard */; };
+		6722D43C24648FEE00D83A19 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6722D43B24648FEE00D83A19 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6722D42424648F9400D83A19 /* CoreMLObjectDetectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLObjectDetectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6722D42424648F9400D83A19 /* CoreMLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6722D42724648F9400D83A19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6722D42924648F9400D83A19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6722D42B24648F9400D83A19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6722D42E24648F9400D83A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6722D43024648F9800D83A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6722D43324648F9800D83A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6722D43524648F9800D83A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6722D43B24648FEE00D83A19 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		6722D42524648F9400D83A19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6722D42424648F9400D83A19 /* CoreMLObjectDetectDemo.app */,
+				6722D42424648F9400D83A19 /* CoreMLDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				6722D42724648F9400D83A19 /* AppDelegate.swift */,
-				6722D42924648F9400D83A19 /* SceneDelegate.swift */,
 				6722D42B24648F9400D83A19 /* ViewController.swift */,
 				6722D42D24648F9400D83A19 /* Main.storyboard */,
 				6722D43024648F9800D83A19 /* Assets.xcassets */,
 				6722D43224648F9800D83A19 /* LaunchScreen.storyboard */,
 				6722D43524648F9800D83A19 /* Info.plist */,
+				6722D43B24648FEE00D83A19 /* Inceptionv3.mlmodel */,
 			);
 			path = CoreMLObjectDetectDemo;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = CoreMLObjectDetectDemo;
 			productName = CoreMLObjectDetectDemo;
-			productReference = 6722D42424648F9400D83A19 /* CoreMLObjectDetectDemo.app */;
+			productReference = 6722D42424648F9400D83A19 /* CoreMLDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,8 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6722D42C24648F9400D83A19 /* ViewController.swift in Sources */,
+				6722D43C24648FEE00D83A19 /* Inceptionv3.mlmodel in Sources */,
 				6722D42824648F9400D83A19 /* AppDelegate.swift in Sources */,
-				6722D42A24648F9400D83A19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +287,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 893E3T5472;
 				INFOPLIST_FILE = CoreMLObjectDetectDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.5nance.test.CoreMLObjectDetectDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.5nance.test;
+				PRODUCT_NAME = CoreMLDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,12 +306,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 893E3T5472;
 				INFOPLIST_FILE = CoreMLObjectDetectDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.5nance.test.CoreMLObjectDetectDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.5nance.test;
+				PRODUCT_NAME = CoreMLDemo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
